@@ -19,8 +19,6 @@ public:
     int round = 1;
     int count = 0;
     int mean = 0.0;
-    std::chrono::time_point<std::chrono::high_resolution_clock> start_time;
-    std::chrono::time_point<std::chrono::high_resolution_clock> end_time;
     ~MainWindow();
 public slots:
     void reset();

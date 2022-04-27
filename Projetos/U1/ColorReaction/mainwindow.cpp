@@ -9,7 +9,7 @@
 #include <QKeyEvent>
 #include <iostream>
 #include <thread>
-struct timeval start, end, now;
+struct timeval start, end;
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -29,7 +29,6 @@ MainWindow::~MainWindow()
 
 void MainWindow :: paintEvent(QPaintEvent *e) {
 
-    using std::chrono::high_resolution_clock;
     srand(time(NULL));
     QPainter painter(this);
     cor = rand()%4;
